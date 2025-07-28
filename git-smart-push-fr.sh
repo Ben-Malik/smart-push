@@ -48,4 +48,28 @@ function push_it() {
     git add .
     git commit -m "$commit_msg"
   else
-    echo "✅ Aucun changement à commit.
+    echo "✅ Aucun changement à commit. Commit ignoré."
+  fi
+
+  if git diff --quiet HEAD origin/"$branch"; then
+    echo "📭 Rien à pousser pour le moment 🫠"
+  else
+    echo "🌍 Poussée vers origin/$branch en cours..."
+    git push origin "$branch"
+  fi
+
+  echo ""
+  echo ""
+
+  echo "🎉 Tu es génial, $user ! Le code est dans les nuages ! ☁️🚀"
+  echo "✨ Continue comme ça, que ton inspiration ne s’épuise jamais ! ☕ 💻🔥"
+  echo ""
+  echo ""
+  echo "Je suis toujours là — pour du code, de la motivation ou juste discuter."
+  echo ""
+  echo "Passe quand tu veux — il y a du thé et de la conversation ! ☕💬"
+  echo ""
+  echo "" 
+}
+
+alias Vas-y='push_it'
