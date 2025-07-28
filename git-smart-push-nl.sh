@@ -1,6 +1,6 @@
 # Commit en push de huidige branch in de huidige directory.
 # Vraagt om een commitbericht
-function push_it() {
+function push_it_nl() {
   local full_user=$(git config --global user.name)
   local user=${full_user%% *}
   local hour=$(date +%H)
@@ -72,4 +72,4 @@ function push_it() {
   echo "" 
 }
 
-alias ga_maar='push_it'
+alias ga_maar='push_it_nl'

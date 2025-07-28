@@ -72,4 +72,4 @@ function push_it() {
   echo "" 
 }
 
-alias Vas-y='push_it'
+alias vas-y='push_it'
