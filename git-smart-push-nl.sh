@@ -67,4 +67,9 @@ function push_it() {
   echo ""
   echo "Ik ben er altijd — voor code, motivatie of gewoon een praatje."
   echo ""
-  echo "Kom gerust langs — er is thee en
+  echo "Kom gerust langs — er is thee en een goed gesprek! ☕💬"
+  echo ""
+  echo "" 
+}
+
+alias ga_maar='push_it'
