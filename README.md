@@ -5,3 +5,5 @@
 2. [English](git-smart-push-en.sh)
 3. [French](git-smart-push-fr.sh)
 4. [Turkish](git-smart-push-tr.sh)
+5[Spanish](git-smart-push-sp.sh)
+6[Portuguese](git-smart-push-pt.sh)
