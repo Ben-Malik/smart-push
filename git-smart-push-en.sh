@@ -53,4 +53,23 @@ function push_it() {
 
   if git diff --quiet HEAD origin/"$branch"; then
     echo "📭 Nothing to push right now 🫠"
- 
+  else
+    echo "🌍 Pushing to origin/$branch..."
+    git push origin "$branch"
+  fi
+
+  echo ""
+  echo ""
+
+  echo "🎉 You're awesome, $user! Code has reached the sky! ☁️🚀"
+  echo "✨ Keep going, may your inspiration never run dry! ☕ 💻🔥"
+  echo ""
+  echo ""
+  echo "I'm always here — for code, motivation, or just a chat."
+  echo ""
+  echo "Drop by anytime — there's tea and talk! ☕💬"
+  echo ""
+  echo "" 
+}
+
+alias yolla='push_it'
